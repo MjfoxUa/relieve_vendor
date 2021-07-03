@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Relieve_Vendor::menu"
+             title="Relieve"
+             module="Relieve_Vendor"
+             sortOrder="10"
+             resource="Magento_Backend::content"/>
+        <add id="Relieve_Vendor::menu_item"
+             title="Vendor" module="Relieve_Vendor"
+             sortOrder="10" parent="Relieve_Vendor::menu"
+             action="relieve_vendor/vendor/index"
+             resource="Relieve_Vendor::menu_item"
+        />
+        <add id="Relieve_Vendor::listing" sortOrder="30" title="Vendor" module="Relieve_Vendor"
+             parent="Dotdigitalgroup_Chat::config" resource="Relieve_Vendor::listing" translate="title"
+             action="relieve_vendor/vendor/index"/>
+    </menu>
+</config>
+

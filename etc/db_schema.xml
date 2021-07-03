@@ -1,0 +1,13 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+<table name="relieve_vendor_vendor" resource="default" engine="innodb" comment="Relieve Vendor Module">
+    <column xsi:type="smallint" name="id" padding="6" unsigned="false" nullable="false" identity="true" comment="ID"/>
+    <column xsi:type="varchar" name="description" nullable="false" length="255" comment="Description"/>
+    <column xsi:type="varchar" name="logo_image" nullable="false" length="32" default="image" comment="Logo (image)"/>
+    <column xsi:type="varchar" name="name" nullable="false" length="25" comment="Name"/>
+    <column xsi:type="timestamp" name="created_time" comment="Date Added"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+        <column name="id"/>
+    </constraint>
+</table>
+</schema>

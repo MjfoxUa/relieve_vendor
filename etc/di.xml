@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="relieve_vendor_vendor_listing_data_source"
+                      xsi:type="string">Relieve\Vendor\Model\ResourceModel\Vendor\Grid\Collection</item>
+                <item xsi:type="string" name="Vendor_data_source">Vendor</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Relieve\Vendor\Model\ResourceModel\Vendor\Grid\Collection"
+                 type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">relieve_vendor_vendor</argument>
+            <argument name="resourceModel" xsi:type="string">Relieve\Vendor\Model\ResourceModel\Vendor</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Vendor" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="resourceModel" xsi:type="string">Relieve\Vendor\Model\ResourceModel\Vendor\Collection
+            </argument>
+            <argument name="mainTable" xsi:type="string">relieve_vendor_vendor</argument>
+        </arguments>
+    </virtualType>
+</config>
