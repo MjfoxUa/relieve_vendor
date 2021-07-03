@@ -1,16 +1,11 @@
 <?php
 /**
- * Plumrocket Inc.
+ * Relieve Inc.
  * NOTICE OF LICENSE
- * This source file is subject to the End-user License Agreement
- * that is available through the world-wide-web at this URL:
- * http://wiki.plumrocket.net/wiki/EULA
- * If you are unable to obtain it through the world-wide-web, please
- * send an email to support@plumrocket.com so we can send you a copy immediately.
  *
- * @package     Plumrocket magento242
- * @copyright   Copyright (c) 2021 Plumrocket Inc. (http://www.plumrocket.com)
- * @license     http://wiki.plumrocket.net/wiki/EULA  End-user License Agreement
+ * @package     Relieve_Vendor
+ * @copyright   Copyright (c) 2021 Relieve Inc.
+ * @license     End-user License Agreement
  */
 
 use Magento\Framework\Component\ComponentRegistrar;
